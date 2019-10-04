@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/contacts', 'ContactController@index');
+Route::post('/ajax/contacts', 'Ajax\ContactController@store');
